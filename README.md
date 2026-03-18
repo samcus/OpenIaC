@@ -147,9 +147,9 @@ OpenIaC/
 
 | Package | Version | Description |
 |---|---|---|
-| `@openiac/all` | `0.1.0` | Meta-package — installs the CLI and all providers |
-| `@openiac/core` | `0.1.0` | Engine, CLI entrypoint (`iac`), and shared TypeScript types |
-| `@openiac/provider-stripe` | `0.1.0` | Stripe API resources: `product`, `price` |
+| `@openiac/all` | `0.2.0` | Meta-package — installs the CLI and all providers |
+| `@openiac/core` | `0.2.0` | Engine, CLI entrypoint (`iac`), and shared TypeScript types |
+| `@openiac/provider-stripe` | `0.2.0` | Stripe API resources: `product`, `price` |
 
 ---
 
