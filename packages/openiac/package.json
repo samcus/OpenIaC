@@ -1,0 +1,13 @@
+{
+  "name": "openiac",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "OpenIAC with all providers — install once, use everything",
+  "bin": {
+    "iac": "../core/src/engine.ts"
+  },
+  "dependencies": {
+    "@openiac/core": "workspace:*",
+    "@openiac/provider-stripe": "workspace:*"
+  }
+}

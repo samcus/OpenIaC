@@ -7,6 +7,7 @@ A TypeScript-first Infrastructure as Code (IaC) framework built as a pnpm monore
 ## Table of Contents
 
 - [How It Works](#how-it-works)
+- [Installation](#installation)
 - [Repository Structure](#repository-structure)
 - [Packages](#packages)
 - [Getting Started (Monorepo Development)](#getting-started-monorepo-development)
@@ -58,6 +59,50 @@ That's it. The engine loads `@openiac/provider-stripe`, finds the `product` reso
 
 ---
 
+## Installation
+
+### Quick Start — Global Install
+
+Install `openiac` globally to get the `iac` CLI and all providers at once:
+
+```bash
+npm install -g openiac
+```
+
+Then run configs from anywhere:
+
+```bash
+iac path/to/config.json
+```
+
+If you only need specific providers, install `@openiac/core` alongside the ones you want:
+
+```bash
+npm install -g @openiac/core @openiac/provider-stripe
+```
+
+### Per-Project Install
+
+Add `openiac` as a dev dependency to get the CLI and all providers:
+
+```bash
+npm install -D openiac
+```
+
+Or install only the core and the providers you need:
+
+```bash
+npm install -D @openiac/core @openiac/provider-stripe
+```
+
+Then run it via `npx`:
+
+```bash
+npx iac path/to/config.json
+```
+
+---
+
 ## Repository Structure
 
 ```
@@ -99,6 +144,7 @@ OpenIAC/
 
 | Package | Version | Description |
 |---|---|---|
+| `openiac` | `0.1.0` | Meta-package — installs the CLI and all providers |
 | `@openiac/core` | `0.1.0` | Engine, CLI entrypoint (`iac`), and shared TypeScript types |
 | `@openiac/provider-stripe` | `0.1.0` | Stripe API resources: `product`, `price` |
 
